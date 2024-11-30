@@ -4,11 +4,12 @@
 *.s
 *.lh
 *.i
+*.ii
 .deps
 a.out*
 *.dis
 *_off
 *.elf
 *.bin
-out.txt
+*.txt
 *.csv
