@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -202,3 +203,5 @@ RAJAPERF_GPU_BLOCK_SIZE_TUNING_DEFINE_BOILERPLATE(MATVEC_3D_STENCIL, Cuda)
 } // end namespace rajaperf
 
 #endif  // RAJA_ENABLE_CUDA
+
+#endif

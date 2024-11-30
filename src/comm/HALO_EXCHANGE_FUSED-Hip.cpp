@@ -5,6 +5,8 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1
+
 
 #include "HALO_EXCHANGE_FUSED.hpp"
 
@@ -414,3 +416,5 @@ void HALO_EXCHANGE_FUSED::setHipTuningDefinitions(VariantID vid)
 } // end namespace rajaperf
 
 #endif  // RAJA_ENABLE_HIP
+
+#endif  // __HERO_1 

@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -147,3 +148,5 @@ void POLYBENCH_FLOYD_WARSHALL::runOpenMPVariant(VariantID vid, size_t RAJAPERF_U
 
 } // end namespace polybench
 } // end namespace rajaperf
+
+#endif

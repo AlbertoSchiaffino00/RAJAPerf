@@ -1,0 +1,455 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.1 (64-bit)
+# SW Build 3080587 on Fri Dec 11 14:53:26 MST 2020
+# IP Build 3080454 on Sat Dec 12 02:19:03 MST 2020
+# Start of session at: Tue Oct 22 09:10:01 2024
+# Process ID: 6334
+# Current directory: /scratch2/msc24h6/RAJAPerf
+# Command line: vivado
+# Log file: /scratch2/msc24h6/RAJAPerf/vivado.log
+# Journal file: /scratch2/msc24h6/RAJAPerf/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/scratch2/msc24h6/carfield/target/xilinx/xilinx_ips/carfield_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/pack/vitis-2020.2-kgf/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 7646.082 ; gain = 184.508 ; free physical = 233 ; free virtual = 54272
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -url bordcomputer:3234 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:bordcomputer:3234
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target bordcomputer:3234/xilinx_tcf/Xilinx/682246154360A
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+current_hw_device [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'design_1_i/vio_0' at location 'uuid_01A4B5947C445FA6BD66F70F5F031273' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+program_hw_devices [get_hw_devices xcvu37p_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:51 ; elapsed = 00:00:48 . Memory (MB): peak = 9030.391 ; gain = 4.000 ; free physical = 704 ; free virtual = 54581
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+refresh_hw_device: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 9086.367 ; gain = 55.977 ; free physical = 663 ; free virtual = 54541
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+ERROR: [Xicom 50-38] xicom: ERROR: [Xicom 50-24] File /usr/pack/vitis-2020.2-kgf/Vivado/2020.2/data/xicom/mig_error_ddr4_0.csv does not exist.
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: bordcomputer:3234
+connect_hw_server -url bordcomputer:3234 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:bordcomputer:3234
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target bordcomputer:3234/xilinx_tcf/Xilinx/682246154360A
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+current_hw_device [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 9198.414 ; gain = 0.000 ; free physical = 513 ; free virtual = 52915
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: bordcomputer:3234
+connect_hw_server -url bordcomputer:3234 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:bordcomputer:3234
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target bordcomputer:3234/xilinx_tcf/Xilinx/682246154360A
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+current_hw_device [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'design_1_i/vio_0' at location 'uuid_01A4B5947C445FA6BD66F70F5F031273' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+program_hw_devices [get_hw_devices xcvu37p_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:50 ; elapsed = 00:00:48 . Memory (MB): peak = 9198.414 ; gain = 0.000 ; free physical = 2009 ; free virtual = 53358
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+refresh_hw_device: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 9198.414 ; gain = 0.000 ; free physical = 1983 ; free virtual = 53337
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+program_hw_devices [get_hw_devices xcvu37p_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:50 ; elapsed = 00:00:49 . Memory (MB): peak = 9200.340 ; gain = 0.000 ; free physical = 1896 ; free virtual = 53263
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: bordcomputer:3234
+connect_hw_server -url bordcomputer:3234 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:bordcomputer:3234
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 9217.316 ; gain = 0.000 ; free physical = 1154 ; free virtual = 54003
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target bordcomputer:3234/xilinx_tcf/Xilinx/682246154360A
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+current_hw_device [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 9218.324 ; gain = 1.008 ; free physical = 1010 ; free virtual = 53987
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+ERROR: [Xicom 50-38] xicom: ERROR: [Xicom 50-24] File /usr/pack/vitis-2020.2-kgf/Vivado/2020.2/data/xicom/mig_error_ddr4_0.csv does not exist.
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: bordcomputer:3234
+connect_hw_server -url bordcomputer:3234 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:bordcomputer:3234
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+connect_hw_server: Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:11 . Memory (MB): peak = 9306.359 ; gain = 0.000 ; free physical = 267 ; free virtual = 51245
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target bordcomputer:3234/xilinx_tcf/Xilinx/682246154360A
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+current_hw_device [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'design_1_i/vio_0' at location 'uuid_01A4B5947C445FA6BD66F70F5F031273' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+program_hw_devices [get_hw_devices xcvu37p_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:50 ; elapsed = 00:00:48 . Memory (MB): peak = 9306.359 ; gain = 0.000 ; free physical = 2143 ; free virtual = 53152
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+refresh_hw_device: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 9306.359 ; gain = 0.000 ; free physical = 2115 ; free virtual = 53123
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: bordcomputer:3234
+connect_hw_server -url bordcomputer:3234 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:bordcomputer:3234
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/682246154360A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target bordcomputer:3234/xilinx_tcf/Xilinx/682246154360A
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+current_hw_device [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 9313.359 ; gain = 0.000 ; free physical = 2138 ; free virtual = 52577
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+ERROR: [Xicom 50-38] xicom: ERROR: [Xicom 50-24] File /usr/pack/vitis-2020.2-kgf/Vivado/2020.2/data/xicom/mig_error_ddr4_0.csv does not exist.
+set_property OUTPUT_VALUE 0 [get_hw_probes design_1_i/vio_0_probe_out2_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out2_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: bordcomputer:3234
+connect_hw_server -url bordcomputer:3232 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:bordcomputer:3232
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/091847100638A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/091847100638A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target bordcomputer:3232/xilinx_tcf/Xilinx/091847100638A
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+current_hw_device [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 9593.332 ; gain = 0.000 ; free physical = 1881 ; free virtual = 50890
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+INFO: [Common 17-14] Message 'Xicom 50-38' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+program_hw_devices [get_hw_devices xcvu37p_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:50 ; elapsed = 00:00:49 . Memory (MB): peak = 9689.371 ; gain = 0.000 ; free physical = 1956 ; free virtual = 50788
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: bordcomputer:3232
+connect_hw_server -url bordcomputer:3232 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:bordcomputer:3232
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/091847100638A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/091847100638A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target bordcomputer:3232/xilinx_tcf/Xilinx/091847100638A
+set_property PROGRAM.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xcvu37p_0]
+set_property PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/scratch2/msc24h6/carfield/target/xilinx/flavor_bd/carfield_vcu128/carfield_vcu128.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xcvu37p_0]
+current_hw_device [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 9692.371 ; gain = 0.000 ; free physical = 5457 ; free virtual = 52148
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: bordcomputer:3232
+exit
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'stop_gui' was cancelled
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 15:51:47 2024...

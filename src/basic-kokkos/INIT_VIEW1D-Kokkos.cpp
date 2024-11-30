@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -55,4 +56,6 @@ void INIT_VIEW1D::runKokkosVariant(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tun
 
 } // end namespace basic
 } // end namespace rajaperf
+#endif
+
 #endif

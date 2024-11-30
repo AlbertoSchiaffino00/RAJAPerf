@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -144,3 +145,5 @@ void REDUCE_SUM::setOpenMPTuningDefinitions(VariantID vid)
 
 } // end namespace algorithm
 } // end namespace rajaperf
+
+#endif

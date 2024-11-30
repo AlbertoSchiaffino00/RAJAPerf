@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-20, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -34,3 +35,4 @@ void MAT_MAT_SHARED::runOpenMPTargetVariant(VariantID vid, size_t RAJAPERF_UNUSE
 } // end namespace rajaperf
 
 #endif // RAJA_ENABLE_TARGET_OPENMP
+#endif // __HERO_1

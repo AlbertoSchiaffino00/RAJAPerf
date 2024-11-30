@@ -5,6 +5,7 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1
 
 #include "HALO_base.hpp"
 
@@ -309,3 +310,5 @@ void HALO_base::destroy_lists(
 
 } // end namespace comm
 } // end namespace rajaperf
+
+#endif  // __HERO_1__

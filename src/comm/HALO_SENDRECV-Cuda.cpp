@@ -6,6 +6,8 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
+
 #include "HALO_SENDRECV.hpp"
 
 #include "RAJA/RAJA.hpp"
@@ -61,3 +63,5 @@ void HALO_SENDRECV::runCudaVariant(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tun
 } // end namespace rajaperf
 
 #endif  // RAJA_ENABLE_CUDA
+
+#endif  // __HERO_1

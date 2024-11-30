@@ -6,8 +6,9 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
 #include "DAXPY.hpp"
-
+#include "DAXPY_OMP.hpp"
 #include "RAJA/RAJA.hpp"
 
 #if defined(RAJA_ENABLE_TARGET_OPENMP)
@@ -32,42 +33,43 @@ void DAXPY::runOpenMPTargetVariant(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tun
   const Index_type run_reps = getRunReps();
   const Index_type ibegin = 0;
   const Index_type iend = getActualProblemSize();
-
-  DAXPY_DATA_SETUP;
+  DAXPY_DATA_SETUP; 
+  DAXPY_OMPTarget daxpy_omp(x, y, a, ibegin, iend, run_reps);
 
   if ( vid == Base_OpenMPTarget ) {
+    daxpy_omp.OMPTarget_initialization();      
 
     startTimer();
-    for (RepIndex_type irep = 0; irep < run_reps; ++irep) {
 
-      #pragma omp target is_device_ptr(x, y) device( did )
-      #pragma omp teams distribute parallel for thread_limit(threads_per_team) schedule(static, 1)
-      for (Index_type i = ibegin; i < iend; ++i ) {
-        DAXPY_BODY;
-      }
-
-    }
+    daxpy_omp.DAXPY_OMP();
+    
     stopTimer();
-
+    
+    daxpy_omp.OMPTarget_conclusion();
+  
   } else if ( vid == RAJA_OpenMPTarget ) {
 
+
+    daxpy_omp.OMPTarget_initialization();      
+
     startTimer();
-    for (RepIndex_type irep = 0; irep < run_reps; ++irep) {
+   
+    daxpy_omp.DAXPY_OMP_opt();
 
-      RAJA::forall<RAJA::omp_target_parallel_for_exec<threads_per_team>>(
-        RAJA::RangeSegment(ibegin, iend), [=](Index_type i) {
-        DAXPY_BODY;
-      });
-
-    }
     stopTimer();
+  
+    daxpy_omp.OMPTarget_conclusion();
+
 
   } else {
      getCout() << "\n  DAXPY : Unknown OMP Target variant id = " << vid << std::endl;
   }
 }
 
+
 } // end namespace basic
 } // end namespace rajaperf
 
 #endif  // RAJA_ENABLE_TARGET_OPENMP
+
+#endif  // __HERO_1

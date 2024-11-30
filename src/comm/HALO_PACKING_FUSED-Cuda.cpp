@@ -6,6 +6,8 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
+
 #include "HALO_PACKING_FUSED.hpp"
 
 #include "RAJA/RAJA.hpp"
@@ -392,3 +394,5 @@ void HALO_PACKING_FUSED::setCudaTuningDefinitions(VariantID vid)
 } // end namespace rajaperf
 
 #endif  // RAJA_ENABLE_CUDA
+
+#endif  // __HERO_1

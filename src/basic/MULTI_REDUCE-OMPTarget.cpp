@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -38,20 +39,20 @@ void MULTI_REDUCE::runOpenMPTargetVariant(VariantID vid, size_t RAJAPERF_UNUSED_
   if ( vid == Base_OpenMPTarget ) {
 
     startTimer();
-    for (RepIndex_type irep = 0; irep < run_reps; ++irep) {
+    // for (RepIndex_type irep = 0; irep < run_reps; ++irep) {
 
-      initOpenMPDeviceData(values, values_init, num_bins);
+    //   initOpenMPDeviceData(values, values_init, num_bins);
 
-      #pragma omp target is_device_ptr(values, bins, data)
-      #pragma omp teams distribute parallel for thread_limit(threads_per_team) schedule(static, 1)
-      for (Index_type i = ibegin; i < iend; ++i ) {
-        #pragma omp atomic
-        MULTI_REDUCE_BODY;
-      }
+    //   #pragma omp target is_device_ptr(values, bins, data)
+    //   #pragma omp teams distribute parallel for thread_limit(threads_per_team) schedule(static, 1)
+    //   for (Index_type i = ibegin; i < iend; ++i ) {
+    //     #pragma omp atomic
+    //     MULTI_REDUCE_BODY;
+    //   }
 
-      getOpenMPDeviceData(values_final, values, num_bins);
+    //   getOpenMPDeviceData(values_final, values, num_bins);
 
-    }
+    // }
     stopTimer();
 
   } else {
@@ -66,3 +67,5 @@ void MULTI_REDUCE::runOpenMPTargetVariant(VariantID vid, size_t RAJAPERF_UNUSED_
 } // end namespace rajaperf
 
 #endif  // RAJA_ENABLE_TARGET_OPENMP
+
+#endif

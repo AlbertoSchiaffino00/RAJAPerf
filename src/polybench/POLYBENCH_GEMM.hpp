@@ -47,7 +47,7 @@
   dot += alpha * A[k + i*nk] * B[j + k*nj];
 
 #define POLYBENCH_GEMM_BODY4 \
-  C[j + i*nj] = dot;
+  C[j + i*nj] += dot;
 
 
 #define POLYBENCH_GEMM_BODY1_RAJA \

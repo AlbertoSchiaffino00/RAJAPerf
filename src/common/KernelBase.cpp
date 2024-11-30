@@ -6,6 +6,8 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
+
 #include "KernelBase.hpp"
 
 #include "RunParams.hpp"
@@ -719,3 +721,5 @@ void KernelBase::setCaliperMgrVariantTuning(VariantID vid,
 std::map<rajaperf::VariantID, std::map<std::string, cali::ConfigManager>> KernelBase::mgr;
 #endif
 }  // closing brace for rajaperf namespace
+
+#endif  // __HERO_1

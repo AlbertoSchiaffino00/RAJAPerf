@@ -6,6 +6,7 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
 #include "RAJAPerfSuite.hpp"
 #include "OutputUtils.hpp"
 
@@ -162,3 +163,5 @@ std::string recursiveMkdir(const std::string& in_path)
 }
 
 }  // closing brace for rajaperf namespace
+
+#endif  // __HERO_1 

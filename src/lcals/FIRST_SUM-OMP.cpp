@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -93,3 +94,5 @@ void FIRST_SUM::runOpenMPVariant(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tune_
 
 } // end namespace lcals
 } // end namespace rajaperf
+
+#endif

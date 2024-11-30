@@ -6,6 +6,10 @@
 # SPDX-License-Identifier: (BSD-3-Clause)
 ###############################################################################
 
+set(CMAKE_TOOLCHAIN_FILE /scratch2/msc24h6/RAJAPerf/toolchain.cmake)
+set(ENABLE_OPENMP On)
+set(ENABLE_TARGET_OPENMP On)
+set(RAJA_ENABLE_TARGET_OPENMP On)
 # C is required for googletest to find Threads
 project(RAJAPerfSuite LANGUAGES CXX C)
 

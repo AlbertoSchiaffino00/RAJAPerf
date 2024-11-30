@@ -6,6 +6,7 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
 #include "DataUtils.hpp"
 #include "CudaDataUtils.hpp"
 #include "HipDataUtils.hpp"
@@ -761,3 +762,5 @@ DataSpace hostAccessibleDataSpace(DataSpace dataSpace)
 }
 
 }  // closing brace for rajaperf namespace
+
+#endif  // __HERO_1

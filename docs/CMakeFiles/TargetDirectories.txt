@@ -1,0 +1,2 @@
+/scratch2/msc24h6/RAJAPerf/docs/CMakeFiles/edit_cache.dir
+/scratch2/msc24h6/RAJAPerf/docs/CMakeFiles/rebuild_cache.dir

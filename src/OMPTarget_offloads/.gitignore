@@ -1,0 +1,14 @@
+*.ll
+*.bc
+*.o
+*.s
+*.lh
+*.i
+.deps
+a.out*
+*.dis
+*_off
+*.elf
+*.bin
+out.txt
+*.csv

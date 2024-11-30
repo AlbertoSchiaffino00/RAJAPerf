@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -146,3 +147,5 @@ void POLYBENCH_ADI::runOpenMPTargetVariant(VariantID vid, size_t RAJAPERF_UNUSED
 
 #endif  // RAJA_ENABLE_TARGET_OPENMP
 
+
+#endif

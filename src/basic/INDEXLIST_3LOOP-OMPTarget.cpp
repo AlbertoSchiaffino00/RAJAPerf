@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-22, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -103,3 +104,5 @@ void INDEXLIST_3LOOP::runOpenMPTargetVariant(VariantID vid, size_t RAJAPERF_UNUS
 
 } // end namespace basic
 } // end namespace rajaperf
+
+#endif

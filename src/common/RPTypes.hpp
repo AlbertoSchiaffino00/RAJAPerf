@@ -27,7 +27,7 @@
 #define RP_USE_COMPLEX
 //#undef RP_USE_COMPLEX
 
-#if defined(RP_USE_COMPLEX)
+#if defined(RP_USE_COMPLEX) && !defined(__HERO_1)
 #include <complex>
 #endif
 
@@ -121,7 +121,8 @@ using Real_type = float;
 
 using Real_ptr = Real_type*;
 
-#if defined(RP_USE_COMPLEX)
+
+#if defined(RP_USE_COMPLEX) && !defined(__HERO_1)
 ///
 using Complex_type = std::complex<Real_type>;
 

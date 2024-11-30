@@ -6,6 +6,7 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
 #include "RAJAPerfSuite.hpp"
 
 #include "RunParams.hpp"
@@ -1173,3 +1174,5 @@ std::ostream& getCout()
 }
 
 }  // closing brace for rajaperf namespace
+
+#endif  // __HERO_1  

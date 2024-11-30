@@ -6,6 +6,8 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
+
 #include "HALO_PACKING.hpp"
 
 #include "RAJA/RAJA.hpp"
@@ -180,3 +182,5 @@ RAJAPERF_GPU_BLOCK_SIZE_TUNING_DEFINE_BOILERPLATE(HALO_PACKING, Hip)
 } // end namespace rajaperf
 
 #endif  // RAJA_ENABLE_HIP
+
+#endif  // __HERO_1

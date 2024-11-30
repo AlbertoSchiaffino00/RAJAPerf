@@ -11,6 +11,9 @@
 
 #include "common/RAJAPerfSuite.hpp"
 #include "common/RPTypes.hpp"
+
+#ifndef __HERO_1
+
 #include "common/DataUtils.hpp"
 #include "common/RunParams.hpp"
 #include "common/GPUUtils.hpp"
@@ -69,6 +72,15 @@
 
 #endif
 
+#else //__HERO_1
+
+// #include <cstddef>
+// #include <cstdint>
+extern "C" {
+  #include <stdint.h>
+}
+#endif //__HERO_1
+
 namespace rajaperf {
 
 /*!
@@ -78,6 +90,7 @@ namespace rajaperf {
  *
  *******************************************************************************
  */
+#ifndef __HERO_1
 class KernelBase
 {
 public:
@@ -598,7 +611,15 @@ private:
   std::vector<RAJA::Timer::ElapsedType> max_time[NumVariants];
   std::vector<RAJA::Timer::ElapsedType> tot_time[NumVariants];
 };
-
+#else //__HERO_1
+class KernelBase
+{
+public:
+  #if defined(RAJA_ENABLE_TARGET_OPENMP)
+  virtual void runOpenMPTargetVariant(VariantID vid, size_t tune_idx) = 0;
+  #endif
+};
+#endif //__HERO_1
 }  // closing brace for rajaperf namespace
 
 #endif  // closing endif for header file include guard

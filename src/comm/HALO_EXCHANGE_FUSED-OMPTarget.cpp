@@ -5,6 +5,8 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1
+
 
 #include "HALO_EXCHANGE_FUSED.hpp"
 
@@ -356,3 +358,5 @@ void HALO_PACKING_FUSED::setOpenMPTargetTuningDefinitions(VariantID vid)
 } // end namespace rajaperf
 
 #endif  // RAJA_ENABLE_TARGET_OPENMP
+
+#endif  // __HERO_1__

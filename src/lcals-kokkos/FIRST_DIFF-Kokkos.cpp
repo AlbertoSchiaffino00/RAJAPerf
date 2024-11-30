@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -61,3 +62,5 @@ void FIRST_DIFF::runKokkosVariant(VariantID vid,
 } // end namespace lcals
 } // end namespace rajaperf
 #endif // RUN_KOKKOS
+
+#endif

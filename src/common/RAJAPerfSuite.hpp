@@ -13,6 +13,8 @@
 #ifndef RAJAPerfSuite_HPP
 #define RAJAPerfSuite_HPP
 
+
+#ifndef __HERO_1
 #include "RAJA/config.hpp"
 #include "rajaperf_config.hpp"
 
@@ -24,6 +26,7 @@
 #include <caliper/cali-manager.h>
 #include <adiak.hpp>
 #endif
+#endif //__HERO_1
 
 namespace rajaperf
 {
@@ -343,7 +346,7 @@ enum struct DataSpace {
 
 };
 
-
+#ifndef __HERO_1
 /*!
  *******************************************************************************
  *
@@ -499,6 +502,7 @@ std::ostream& getNullStream();
 template < typename... Ts >
 inline void ignore_unused(Ts&&...) { }
 
+#endif //__HERO_1
 }  // closing brace for rajaperf namespace
 
 #endif  // closing endif for header file include guard

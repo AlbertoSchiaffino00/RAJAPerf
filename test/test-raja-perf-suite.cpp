@@ -5,7 +5,7 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-
+#ifndef __HERO_1
 #include "gtest/gtest.h"
 
 #if defined(RUN_KOKKOS)
@@ -176,3 +176,5 @@ TEST(ShortSuiteTest, Basic)
   // clean up 
   delete [] argv; 
 }
+
+#endif  // __HERO_1

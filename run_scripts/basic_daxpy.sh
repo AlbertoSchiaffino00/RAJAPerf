@@ -1,0 +1,1 @@
+./raja-perf-omptarget.exe -k Basic_DAXPY --size 10000 --repfact 0.0025 --disable-warmup -v Base_Seq Base_OMPTarget RAJA_OMPTarget -od outputs --omptarget-data-space Host

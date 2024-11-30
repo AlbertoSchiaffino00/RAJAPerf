@@ -5,6 +5,8 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1
+
 
 #include "HALO_EXCHANGE_FUSED.hpp"
 
@@ -165,3 +167,5 @@ void HALO_EXCHANGE_FUSED::tearDown(VariantID vid, size_t tune_idx)
 } // end namespace rajaperf
 
 #endif
+
+#endif  // __HERO_1

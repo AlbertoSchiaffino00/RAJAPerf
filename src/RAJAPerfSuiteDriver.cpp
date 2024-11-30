@@ -6,6 +6,7 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
 #if defined(RUN_KOKKOS)
 #include <Kokkos_Core.hpp>
 #endif
@@ -59,3 +60,5 @@ int main( int argc, char** argv )
 
   return 0;
 }
+
+#endif  // __HERO_1

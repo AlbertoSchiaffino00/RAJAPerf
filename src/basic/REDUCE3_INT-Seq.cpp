@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -160,3 +161,5 @@ void REDUCE3_INT::setSeqTuningDefinitions(VariantID vid)
 
 } // end namespace basic
 } // end namespace rajaperf
+
+#endif

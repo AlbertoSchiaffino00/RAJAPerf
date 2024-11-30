@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-22, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -85,3 +86,5 @@ void SCAN::tearDown(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tune_idx))
 
 } // end namespace algorithm
 } // end namespace rajaperf
+
+#endif

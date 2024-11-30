@@ -6,6 +6,8 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
+
 #include "HALO_EXCHANGE.hpp"
 
 #include "RAJA/RAJA.hpp"
@@ -245,3 +247,5 @@ void HALO_EXCHANGE::runSeqVariant(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tune
 } // end namespace rajaperf
 
 #endif
+
+#endif  //__HERO_1

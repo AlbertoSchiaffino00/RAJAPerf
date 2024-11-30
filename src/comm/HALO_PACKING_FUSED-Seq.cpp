@@ -6,6 +6,8 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
+
 #include "HALO_PACKING_FUSED.hpp"
 
 #include "RAJA/RAJA.hpp"
@@ -348,3 +350,5 @@ void HALO_PACKING_FUSED::setSeqTuningDefinitions(VariantID vid)
 
 } // end namespace comm
 } // end namespace rajaperf
+
+#endif  // __HERO_1

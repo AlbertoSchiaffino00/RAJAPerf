@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -217,3 +218,5 @@ void POLYBENCH_ADI::runSeqVariant(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tune
 
 } // end namespace polybench
 } // end namespace rajaperf
+
+#endif

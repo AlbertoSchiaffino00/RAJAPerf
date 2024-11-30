@@ -5,6 +5,7 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1
 
 #include "RunParams.hpp"
 
@@ -2491,3 +2492,5 @@ void RunParams::processTuningInput()
 
 
 }  // closing brace for rajaperf namespace
+
+#endif  // __HERO_1__

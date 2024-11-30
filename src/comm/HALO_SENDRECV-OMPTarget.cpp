@@ -6,6 +6,8 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
+
 #include "HALO_SENDRECV.hpp"
 
 #include "RAJA/RAJA.hpp"
@@ -66,3 +68,5 @@ void HALO_SENDRECV::runOpenMPTargetVariant(VariantID vid, size_t RAJAPERF_UNUSED
 } // end namespace rajaperf
 
 #endif  // RAJA_ENABLE_TARGET_OPENMP
+
+#endif  // __HERO_1

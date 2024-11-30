@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -62,3 +63,5 @@ void TRIDIAG_ELIM::runKokkosVariant(VariantID vid,
 } // end namespace lcals
 } // end namespace rajaperf
 #endif // RUN_KOKKOS
+
+#endif

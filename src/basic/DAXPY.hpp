@@ -68,8 +68,11 @@ public:
   void runSyclVariantImpl(VariantID vid);
 
 private:
+  
+  #ifndef __HERO_1
   static const size_t default_gpu_block_size = 256;
   using gpu_block_sizes_type = integer::make_gpu_block_size_list_type<default_gpu_block_size>;
+  #endif
 
   Real_ptr m_x;
   Real_ptr m_y;

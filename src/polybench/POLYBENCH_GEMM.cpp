@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -23,7 +24,7 @@ POLYBENCH_GEMM::POLYBENCH_GEMM(const RunParams& params)
 {
   Index_type ni_default = 1000;
   Index_type nj_default = 1000;
-  Index_type nk_default = 1200;
+  Index_type nk_default = 2000;
 
   setDefaultProblemSize( ni_default * nj_default );
   setDefaultReps(4);
@@ -105,3 +106,5 @@ void POLYBENCH_GEMM::tearDown(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tune_idx
 
 } // end namespace polybench
 } // end namespace rajaperf
+
+#endif

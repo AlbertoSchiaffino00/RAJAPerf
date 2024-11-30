@@ -6,7 +6,7 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-
+#ifndef __HERO_1
 #include "Executor.hpp"
 
 #include "common/KernelBase.hpp"
@@ -1661,3 +1661,5 @@ void Executor::getFOMGroups(vector<FOMGroup>& fom_groups)
 
 
 }  // closing brace for rajaperf namespace
+
+#endif  // endnif __HERO

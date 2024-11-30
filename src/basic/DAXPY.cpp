@@ -1,3 +1,4 @@
+#ifndef __HERO_1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 // Copyright (c) 2017-24, Lawrence Livermore National Security, LLC
 // and RAJA Performance Suite project contributors.
@@ -75,7 +76,11 @@ void DAXPY::setUp(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tune_idx))
 
 void DAXPY::updateChecksum(VariantID vid, size_t tune_idx)
 {
-  checksum[vid].at(tune_idx) += calcChecksum(m_y, getActualProblemSize(), vid);
+  // auto vid_old = vid;
+  // vid = VariantID::Base_Seq;
+  auto temp = calcChecksum(m_y, getActualProblemSize(), vid);
+  // vid = vid_old;
+  checksum[vid].at(tune_idx) += temp;
 }
 
 void DAXPY::tearDown(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tune_idx))
@@ -87,3 +92,5 @@ void DAXPY::tearDown(VariantID vid, size_t RAJAPERF_UNUSED_ARG(tune_idx))
 
 } // end namespace basic
 } // end namespace rajaperf
+
+#endif
