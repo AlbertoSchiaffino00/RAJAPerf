@@ -36,7 +36,6 @@ void POLYBENCH_GEMM::runOpenMPTargetVariant(VariantID vid, size_t RAJAPERF_UNUSE
 
     gemm.OMPTarget_initialization();
 
-
     startTimer();
 
     gemm.POLYBENCH_GEMM_OMP();
@@ -72,7 +71,6 @@ void POLYBENCH_GEMM::runOpenMPTargetVariant(VariantID vid, size_t RAJAPERF_UNUSE
 
 
     gemm.POLYBENCH_GEMM_OMP_opt();
-    
 
     stopTimer();
 

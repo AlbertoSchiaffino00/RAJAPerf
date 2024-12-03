@@ -37,6 +37,8 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <fcntl.h>
+#include <unistd.h>
 #include <map>
 #include <limits>
 #include <utility>
@@ -435,6 +437,8 @@ public:
 
   void startTimer()
   {
+    std::cout << "Before running kernel" << std::endl;
+    print_riscv_interrupts();
     synchronize();
 #if defined(RAJA_PERFSUITE_ENABLE_MPI)
     MPI_Barrier(MPI_COMM_WORLD);
@@ -450,9 +454,48 @@ public:
     MPI_Barrier(MPI_COMM_WORLD);
 #endif
     CALI_STOP; timer.stop(); recordExecTime();
+
+    std::cout << "After running kernel" << std::endl;
+    print_riscv_interrupts();
   }
 
   void resetTimer() { timer.reset(); }
+
+
+  void print_riscv_interrupts()
+  {
+    int fd = open("/proc/interrupts", O_RDONLY | O_DIRECT);
+    if (fd == -1) {
+        std::cerr << "Failed to open file" << std::endl;
+        return;
+    }
+
+    const size_t buffer_size = 4096;
+    std::vector<char> buffer(buffer_size);
+    ssize_t bytes_read;
+    int line_num = 0;
+    std::string line;
+
+    while ((bytes_read = read(fd, buffer.data(), buffer_size)) > 0) {
+        for (ssize_t i = 0; i < bytes_read; ++i) {
+            if (buffer[i] == '\n') {
+                if (line_num == 0 || line_num == 3) {
+                    std::cout << line << std::endl;
+                }
+                line.clear();
+                line_num++;
+            } else {
+                line += buffer[i];
+            }
+        }
+    }
+
+    if (bytes_read == -1) {
+        std::cerr << "Failed to read file" << std::endl;
+    }
+
+    close(fd);
+  }
 
   //
   // Virtual and pure virtual methods that may/must be implemented
@@ -619,6 +662,7 @@ public:
   virtual void runOpenMPTargetVariant(VariantID vid, size_t tune_idx) = 0;
   #endif
 };
+
 #endif //__HERO_1
 }  // closing brace for rajaperf namespace
 
