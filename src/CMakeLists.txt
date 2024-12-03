@@ -274,6 +274,7 @@ blt_add_executable(
   comm/HALO_EXCHANGE_FUSED-Seq.cpp
   comm/HALO_EXCHANGE_FUSED-OMPTarget.cpp
   DEPENDS_ON ${RAJA_PERFSUITE_EXECUTABLE_DEPENDS}
+  LINK_LIBRARIES OMPTarget_offloads/OMPTarget_offloads.a
 )
 install( TARGETS raja-perf-omptarget.exe
          RUNTIME DESTINATION bin

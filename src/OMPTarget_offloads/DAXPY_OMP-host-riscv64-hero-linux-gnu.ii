@@ -7,7 +7,7 @@
 # 1 "DAXPY_OMP.cpp" 2
 # 13 "DAXPY_OMP.cpp"
 extern "C" {
-# 1 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 1
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 1
 
 
 
@@ -87,7 +87,7 @@ typedef int error_t;
 
 
 }
-# 10 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 10 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/fcntl.h" 1 3
 # 28 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/fcntl.h" 3
 extern "C" {
@@ -536,9 +536,9 @@ extern int posix_fallocate (int __fd, off_t __offset, off_t __len);
 extern int posix_fallocate64 (int __fd, off64_t __offset, off64_t __len);
 # 332 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/fcntl.h" 3
 }
-# 11 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 11 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 # 1 "/scratch2/msc24h6/hero-tools/install/lib/clang/15.0.0/include/stdbool.h" 1 3
-# 12 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 12 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 # 1 "/scratch2/msc24h6/hero-tools/install/lib/clang/15.0.0/include/stdint.h" 1 3
 # 52 "/scratch2/msc24h6/hero-tools/install/lib/clang/15.0.0/include/stdint.h" 3
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/stdint.h" 1 3
@@ -610,7 +610,7 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 53 "/scratch2/msc24h6/hero-tools/install/lib/clang/15.0.0/include/stdint.h" 2 3
-# 13 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 13 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/stdio.h" 1 3
 # 27 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/stdio.h" 3
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/bits/libc-header-start.h" 1 3
@@ -1440,7 +1440,7 @@ extern __inline __attribute__ ((__gnu_inline__)) int
 # 864 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/stdio.h" 2 3
 # 874 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/stdio.h" 3
 }
-# 14 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 14 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/stdlib.h" 1
 # 36 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/stdlib.h"
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstdlib" 1
@@ -3028,7 +3028,7 @@ using std::system;
 
 using std::wcstombs;
 using std::wctomb;
-# 15 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 15 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/string.h" 1 3
 # 26 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/string.h" 3
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/bits/libc-header-start.h" 1 3
@@ -3492,7 +3492,7 @@ extern "C++" const char *basename (const char *__filename)
      noexcept (true) __asm ("basename") __attribute__ ((__nonnull__ (1)));
 # 523 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/string.h" 3
 }
-# 16 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/sys/ioctl.h" 1 3
 # 23 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/sys/ioctl.h" 3
 extern "C" {
@@ -3561,7 +3561,7 @@ struct termio
 extern int ioctl (int __fd, unsigned long int __request, ...) noexcept (true);
 
 }
-# 17 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 17 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/sys/mman.h" 1 3
 # 25 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/sys/mman.h" 3
 # 1 "/scratch2/msc24h6/hero-tools/install/lib/clang/15.0.0/include/stddef.h" 1 3
@@ -3695,7 +3695,7 @@ extern int shm_open (const char *__name, int __oflag, mode_t __mode);
 extern int shm_unlink (const char *__name);
 
 }
-# 18 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 18 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/unistd.h" 1 3
 # 27 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/unistd.h" 3
 extern "C" {
@@ -5058,10 +5058,10 @@ extern __pid_t gettid (void) noexcept (true);
 # 1188 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/unistd.h" 2 3
 
 }
-# 19 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 19 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
 
-# 1 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/ringbuf.h" 1
-# 25 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/ringbuf.h"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/ringbuf.h" 1
+# 25 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/ringbuf.h"
 struct ring_buf {
   uint32_t head;
   uint32_t size;
@@ -5070,7 +5070,7 @@ struct ring_buf {
   uint64_t data_v;
   uint64_t data_p;
 };
-# 41 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/ringbuf.h"
+# 41 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/ringbuf.h"
 static inline int rb_device_put(volatile struct ring_buf *rb, void *el) {
   uint32_t next_head = (rb->head + 1) % rb->size;
 
@@ -5097,7 +5097,7 @@ static inline int rb_host_get(volatile struct ring_buf *rb, void *el) {
   rb->tail = (rb->tail + 1) % rb->size;
   return 0;
 }
-# 75 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/ringbuf.h"
+# 75 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/ringbuf.h"
 static inline int rb_host_put(volatile struct ring_buf *rb, void *el) {
   uint32_t next_head = (rb->head + 1) % rb->size;
 
@@ -5134,8 +5134,8 @@ static inline void rb_init(volatile struct ring_buf *rb, uint32_t size, uint32_t
   rb->size = size;
   rb->element_size = element_size;
 }
-# 21 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
-# 1 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/debug.h" 1
+# 21 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/debug.h" 1
 
 
 
@@ -5428,7 +5428,7 @@ extern int getdate_r (const char *__restrict __string,
 
 
 }
-# 7 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/debug.h" 2
+# 7 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/debug.h" 2
 
 
 
@@ -5475,8 +5475,8 @@ enum log_level {
   LOG_MIN = LOG_ERROR,
   LOG_MAX = LOG_TRACE,
 };
-# 22 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
-# 35 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 22 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h" 2
+# 35 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 typedef enum {
     inout = 0,
     in = 1,
@@ -5525,7 +5525,7 @@ typedef struct {
 
     StripingDesc *stripe_desc;
 } DataDesc;
-# 103 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 103 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 typedef struct HeroSubDev {
     unsigned *v_addr;
     size_t p_addr;
@@ -5550,19 +5550,19 @@ typedef struct {
     char alias[32];
     HeroMboxes_t mboxes;
 } HeroDev;
-# 147 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 147 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_mbox_read(const HeroDev *dev, uint32_t *buffer, size_t n_words);
-# 156 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 156 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_mbox_write(HeroDev *dev, uint32_t word);
-# 171 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 171 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_mmap(HeroDev *dev);
-# 180 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 180 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_munmap(HeroDev *dev);
-# 198 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 198 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_clking_set_freq(HeroDev *dev, unsigned des_freq_mhz);
-# 210 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 210 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_clking_measure_freq(HeroDev *dev);
-# 224 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 224 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_init(HeroDev *dev);
 
 
@@ -5571,9 +5571,9 @@ int hero_dev_init(HeroDev *dev);
 
 
 void hero_dev_reset(HeroDev *dev, unsigned full);
-# 245 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 245 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_load_bin(HeroDev *dev, const char *name);
-# 257 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 257 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_load_bin_from_mem(HeroDev *dev, void *ptr, unsigned size);
 
 
@@ -5587,9 +5587,9 @@ void hero_dev_exe_start(HeroDev *dev);
 
 
 void hero_dev_exe_stop(HeroDev *dev);
-# 280 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 280 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_exe_wait(const HeroDev *dev, int timeout_s);
-# 293 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 293 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 uintptr_t hero_dev_l3_malloc(HeroDev *dev, unsigned size_b, uint64_t *p_addr);
 
 uintptr_t hero_dev_l2_malloc(HeroDev *dev, unsigned size_b, uintptr_t *p_addr);
@@ -5617,7 +5617,7 @@ void hero_dev_l3_free(HeroDev *dev, uintptr_t v_addr, uintptr_t p_addr);
 
 
 void hero_dev_l2_free(HeroDev *dev, uintptr_t v_addr, uintptr_t p_addr);
-# 337 "/scratch2/msc24h6/RAJAPerf/../hero-tools/sw/libhero/include/libhero/hero_api.h"
+# 337 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/sw/libhero/include/libhero/hero_api.h"
 int hero_dev_dma_xfer(const HeroDev *dev, uintptr_t addr_l3,
                       uintptr_t addr_pulp, size_t size_b, int host_read);
 # 15 "DAXPY_OMP.cpp" 2
@@ -33072,8 +33072,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 extern "C" {
-# 1 "/scratch2/msc24h6/RAJAPerf/../hero-tools/apps/carfield/omp/common/hero_64.h" 1
-# 45 "/scratch2/msc24h6/RAJAPerf/../hero-tools/apps/carfield/omp/common/hero_64.h"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/apps/carfield/omp/common/hero_64.h" 1
+# 45 "/scratch2/msc24h6/test_raja/RAJAPerf/../../hero-tools/apps/carfield/omp/common/hero_64.h"
 inline static __attribute__((used)) uint64_t hero_load_uint64 (const uint64_t addr);
 inline static __attribute__((used)) void hero_store_uint64 (const uint64_t addr,
                                                                          const uint64_t val);
@@ -33106,12 +33106,12 @@ inline static __attribute__((used)) int hero_store_uint8_noblock (const uint64_t
 }
 
 # 1 "./include/DAXPY_OMP.hpp" 1
-# 1 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp" 1
-# 16 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp" 1
-# 23 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp" 1
-# 34 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp" 1
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp" 1
+# 23 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp" 1
+# 34 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/utility" 1
 # 59 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/utility" 3
 # 69 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/utility" 3
@@ -33416,7 +33416,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     using index_sequence_for = make_index_sequence<sizeof...(_Types)>;
 # 474 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/utility" 3
 }
-# 35 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp" 2
+# 35 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstddef" 1
 # 43 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstddef" 3
 
@@ -33439,20 +33439,20 @@ namespace std
 }
 # 179 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstddef" 3
 }
-# 36 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp" 2
-# 99 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
+# 36 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp" 2
+# 99 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
 static_assert(1,
               "RAJA requires at least basic C++14 to operate correctly, your "
               "compiler and/or standard library does not claim support for "
               "C++14 features we need");
-# 253 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
+# 253 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
 namespace RAJA {
-# 328 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
+# 328 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
 const int DATA_ALIGN = 64;
-# 541 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
+# 541 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
 static_assert(16 >= alignof(std::max_align_t) && (16/alignof(std::max_align_t))*alignof(std::max_align_t) == 16,
         "Inconsistent RAJA_MAX_ALIGN size");
-# 555 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
+# 555 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/include/RAJA/config.hpp"
 template<typename T>
 inline __attribute__((always_inline))
 T * align_hint(T * x)
@@ -33470,7 +33470,7 @@ T * align_hint(T * x)
 
 
 }
-# 24 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp" 2
+# 24 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp" 2
 
 
 
@@ -33478,23 +33478,23 @@ T * align_hint(T * x)
 
 
 
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/helpers.hpp" 1
-# 17 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/helpers.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp" 1
-# 17 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/build/tpl/RAJA/tpl/camp/include/camp/config.hpp" 1
-# 18 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp" 2
-# 28 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/helpers.hpp" 1
+# 17 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/helpers.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp" 1
+# 17 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/build/tpl/RAJA/tpl/camp/include/camp/config.hpp" 1
+# 18 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp" 2
+# 28 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
 namespace camp
 {
-# 168 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
+# 168 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
 using idx_t = std::ptrdiff_t;
 using nullptr_t = decltype(nullptr);
-# 180 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
+# 180 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
                 void throw_re(const char *s);
-# 205 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
+# 205 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/defines.hpp"
 }
-# 18 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/helpers.hpp" 2
+# 18 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/helpers.hpp" 2
 
 namespace camp
 {
@@ -33707,19 +33707,19 @@ template <typename T, typename = decltype(sink(swap(val<T>(), val<T>())))>
   swap(t1, t2);
 }
 }
-# 32 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp" 2
+# 32 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp" 2
 
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp" 1
-# 23 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp" 1
+# 23 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp"
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstdlib" 1
 # 40 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstdlib" 3
-# 24 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp" 2
-# 117 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp"
+# 24 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp" 2
+# 117 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp"
 template <typename... T>
                  inline __attribute__((always_inline)) void RAJA_UNUSED_VAR(T &&...) noexcept
 {
 }
-# 153 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp"
+# 153 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp"
 inline void RAJA_ABORT_OR_THROW(const char *str)
 {
 
@@ -33730,9 +33730,9 @@ inline void RAJA_ABORT_OR_THROW(const char *str)
 
 
   *((volatile char *)0) = 0;
-# 192 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp"
+# 192 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/macros.hpp"
 }
-# 34 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp" 2
+# 34 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp" 2
 
 
 namespace RAJA
@@ -33783,14 +33783,14 @@ struct SizedLoopSpecifyingBase : SizedLoopBase
 {
   static constexpr size_t max_iterations = t_max_iterations;
 };
-# 106 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
+# 106 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
 struct Direct : DirectBase {};
-# 133 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
+# 133 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
 template < size_t max_iterations >
 struct Contiguousloop : ContiguousLoopBase,
     std::conditional_t<(max_iterations != named_usage::unspecified),
                        SizedLoopSpecifyingBase<max_iterations>, UnsizedLoopBase> {};
-# 163 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
+# 163 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
 template < size_t max_iterations >
 struct StridedLoop : StridedLoopBase,
     std::conditional_t<(max_iterations != named_usage::unspecified),
@@ -33844,13 +33844,13 @@ struct Fraction
   }
 
 };
-# 228 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
+# 228 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
 using Real_type = double;
-# 265 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
+# 265 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
 using TDRAReal_ptr = Real_type* __restrict__ __attribute__((aligned(RAJA::DATA_ALIGN)));
 
 using const_TDRAReal_ptr = const TDRAReal_ptr;
-# 829 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
+# 829 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
 using Real_ptr = Real_type* __restrict__;
 using const_Real_ptr = const Real_type* __restrict__;
 
@@ -33861,7 +33861,7 @@ using const_Real_ptr = const Real_type* __restrict__;
 
 using UnalignedReal_ptr = Real_type* __restrict__;
 using const_UnalignedReal_ptr = const Real_type* __restrict__;
-# 870 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
+# 870 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/types.hpp"
 namespace detail {
 
 
@@ -33991,8 +33991,8 @@ private:
 }
 
 }
-# 17 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp" 2
-# 31 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp"
+# 17 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp" 2
+# 31 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp"
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/complex" 1
 # 40 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/complex" 3
 
@@ -40995,29 +40995,29 @@ inline namespace complex_literals {
 
 
 }
-# 32 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp" 2
+# 32 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp" 2
 
 
 
 namespace rajaperf
 {
-# 49 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp"
+# 49 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp"
 using RepIndex_type = volatile int;
-# 59 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp"
+# 59 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp"
 using Index_type = RAJA::Index_type;
 
 using Index_ptr = Index_type*;
-# 71 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp"
+# 71 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp"
 using Size_type = size_t;
-# 81 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp"
+# 81 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp"
 using Int_type = int;
 
 using Int_ptr = Int_type*;
-# 93 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp"
+# 93 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp"
 using Checksum_type = long double;
-# 107 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp"
+# 107 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp"
 using Real_type = double;
-# 122 "/scratch2/msc24h6/RAJAPerf/src/common/RPTypes.hpp"
+# 122 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RPTypes.hpp"
 using Real_ptr = Real_type*;
 
 
@@ -41033,20 +41033,20 @@ using Complex_ptr = Complex_type*;
 
 }
 # 2 "./include/DAXPY_OMP.hpp" 2
-# 1 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp" 1
-# 12 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp" 1
-# 19 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/build/include/rajaperf_config.hpp" 1
-# 24 "/scratch2/msc24h6/RAJAPerf/build/include/rajaperf_config.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number.hpp" 1
-# 15 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/if.hpp" 1
-# 14 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/if.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/value.hpp" 1
-# 14 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/value.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/number.hpp" 1
-# 16 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/number.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp" 1
+# 12 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp" 1
+# 19 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/build/include/rajaperf_config.hpp" 1
+# 24 "/scratch2/msc24h6/test_raja/RAJAPerf/build/include/rajaperf_config.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number.hpp" 1
+# 15 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/if.hpp" 1
+# 14 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/if.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/value.hpp" 1
+# 14 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/value.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/number.hpp" 1
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/number.hpp"
 namespace camp
 {
 
@@ -41074,7 +41074,7 @@ using false_type = num<false>;
 using t = num<true>;
 
 }
-# 15 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/value.hpp" 2
+# 15 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/value.hpp" 2
 
 namespace camp
 {
@@ -41113,7 +41113,7 @@ struct is_value_s {
 template <typename Val>
 using is_value = typename is_value_s<Val>::type;
 }
-# 15 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/if.hpp" 2
+# 15 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number/if.hpp" 2
 
 
 
@@ -41155,7 +41155,7 @@ template <typename... Ts>
 using if_ = typename if_s<Ts...>::type;
 
 }
-# 16 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number.hpp" 2
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number.hpp" 2
 
 
 
@@ -41183,7 +41183,7 @@ namespace detail
   struct gen_seq<T, integral_constant<T, N>> {
     using type = __make_integer_seq<int_seq, T, N>;
   };
-# 74 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number.hpp"
+# 74 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/number.hpp"
 }
 
 
@@ -41252,15 +41252,15 @@ struct seq_at<0, camp::int_seq<T, Idx0, IdxRest...>> {
 
 
 }
-# 25 "/scratch2/msc24h6/RAJAPerf/build/include/rajaperf_config.hpp" 2
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list.hpp" 1
-# 14 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/at.hpp" 1
-# 16 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/at.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/list.hpp" 1
-# 15 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/list.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/size.hpp" 1
-# 14 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/size.hpp"
+# 25 "/scratch2/msc24h6/test_raja/RAJAPerf/build/include/rajaperf_config.hpp" 2
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list.hpp" 1
+# 14 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/at.hpp" 1
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/at.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/list.hpp" 1
+# 15 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/list.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/size.hpp" 1
+# 14 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/size.hpp"
 namespace camp
 {
 
@@ -41268,7 +41268,7 @@ template <typename T>
 struct size;
 
 }
-# 16 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/list.hpp" 2
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/list.hpp" 2
 
 namespace camp
 {
@@ -41307,7 +41307,7 @@ struct size<list<Args...>> {
 };
 
 }
-# 17 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/at.hpp" 2
+# 17 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/at.hpp" 2
 
 
 
@@ -41324,7 +41324,7 @@ namespace detail
   struct _at<T<Pack...>, Idx> {
     using type = __type_pack_element<Idx, Pack...>;
   };
-# 76 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/at.hpp"
+# 76 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/at.hpp"
 }
 
 
@@ -41350,11 +41350,11 @@ using at_v = typename at<T, num<Idx>>::type;
 template <typename T, typename U>
 using at_t = typename at<T, U>::type;
 }
-# 15 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list.hpp" 2
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/find_if.hpp" 1
-# 17 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/find_if.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/lambda.hpp" 1
-# 21 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/lambda.hpp"
+# 15 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list.hpp" 2
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/find_if.hpp" 1
+# 17 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/find_if.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/lambda.hpp" 1
+# 21 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/lambda.hpp"
 namespace camp
 {
 
@@ -41423,7 +41423,7 @@ struct bind_front {
 template <typename Lambda, typename... Rest> struct bind_front_l { using type = typename bind_front<Lambda::template expr, Rest...>::type; };
 
 }
-# 18 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/find_if.hpp" 2
+# 18 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list/find_if.hpp" 2
 
 
 
@@ -41461,9 +41461,9 @@ struct find_if<Cond, list<Elements...>> {
 template <typename Lambda, typename... Rest> struct find_if_l { using type = typename find_if<Lambda::template expr, Rest...>::type; };
 
 }
-# 16 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list.hpp" 2
-# 26 "/scratch2/msc24h6/RAJAPerf/build/include/rajaperf_config.hpp" 2
-# 53 "/scratch2/msc24h6/RAJAPerf/build/include/rajaperf_config.hpp"
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/list.hpp" 2
+# 26 "/scratch2/msc24h6/test_raja/RAJAPerf/build/include/rajaperf_config.hpp" 2
+# 53 "/scratch2/msc24h6/test_raja/RAJAPerf/build/include/rajaperf_config.hpp"
 template < typename ... Ts >
 inline void RAJAPERF_UNUSED_VAR(Ts&&...) { }
 
@@ -41481,7 +41481,7 @@ using list_type = camp::list< camp::integral_constant<size_t, Is>... >;
 }
 
 struct configuration {
-# 122 "/scratch2/msc24h6/RAJAPerf/build/include/rajaperf_config.hpp"
+# 122 "/scratch2/msc24h6/test_raja/RAJAPerf/build/include/rajaperf_config.hpp"
 using gpu_block_sizes = integer::list_type<>;
 
 
@@ -41524,14 +41524,14 @@ inline void seq_for(camp::list<Ts...> const&, Func&& func)
 }
 
 }
-# 20 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp" 2
-# 31 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 20 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp" 2
+# 31 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 namespace rajaperf
 {
 
 class KernelBase;
 class RunParams;
-# 50 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 50 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 enum GroupID {
 
   Basic = 0,
@@ -41545,7 +41545,7 @@ enum GroupID {
   NumGroups
 
 };
-# 78 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 78 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 enum KernelID {
 
 
@@ -41657,7 +41657,7 @@ enum KernelID {
   NumKernels
 
 };
-# 203 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 203 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 enum VariantID {
 
   Base_Seq = 0,
@@ -41687,7 +41687,7 @@ enum VariantID {
   NumVariants
 
 };
-# 246 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 246 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 enum FeatureID {
 
   Forall = 0,
@@ -41710,7 +41710,7 @@ enum FeatureID {
   NumFeatures
 
 };
-# 282 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 282 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 enum struct Complexity {
 
   N = 0,
@@ -41724,7 +41724,7 @@ enum struct Complexity {
   NumComplexities
 
 };
-# 310 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 310 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 enum struct DataSpace {
 
   Host = 0,
@@ -41763,49 +41763,49 @@ enum struct DataSpace {
   EndPseudoSpaces
 
 };
-# 357 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 357 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 const std::string& getGroupName(GroupID gid);
-# 368 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 368 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 std::string getKernelName(KernelID kid);
-# 379 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 379 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 const std::string& getFullKernelName(KernelID kid);
-# 388 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 388 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 const std::string& getVariantName(VariantID vid);
-# 398 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 398 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 bool isVariantAvailable(VariantID vid);
-# 408 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 408 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 bool isVariantGPU(VariantID vid);
-# 417 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 417 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 const std::string& getFeatureName(FeatureID vid);
-# 426 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 426 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 const std::string& getComplexityName(Complexity ac);
-# 435 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 435 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 const std::string& getDataSpaceName(DataSpace cd);
-# 444 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 444 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 bool isDataSpaceAvailable(DataSpace dataSpace);
-# 453 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 453 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 bool isPseudoDataSpace(DataSpace dataSpace);
-# 464 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 464 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 KernelBase* getKernelObject(KernelID kid, const RunParams& run_params);
-# 475 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 475 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 std::ostream& getCout();
-# 484 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 484 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 std::ostream* makeNullStream();
-# 493 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 493 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 std::ostream& getNullStream();
-# 502 "/scratch2/msc24h6/RAJAPerf/src/common/RAJAPerfSuite.hpp"
+# 502 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RAJAPerfSuite.hpp"
 template < typename... Ts >
 inline void ignore_unused(Ts&&...) { }
 
 
 }
-# 13 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp" 2
+# 13 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp" 2
 
 
 
 
-# 1 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp" 1
-# 20 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp" 1
+# 20 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp"
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/limits" 1
 # 41 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/limits" 3
 # 158 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/limits" 3
@@ -43259,8 +43259,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 21 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp" 2
-# 34 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp"
+# 21 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp" 2
+# 34 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp"
 namespace rajaperf
 {
 
@@ -43306,9 +43306,9 @@ void copyData(DataSpace dst_dataSpace, void* dst_ptr,
 
 
 void deallocData(DataSpace dataSpace, void* ptr);
-# 88 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp"
+# 88 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp"
 void initData(Int_ptr& ptr, Size_type len);
-# 97 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp"
+# 97 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp"
 void initData(Real_ptr& ptr, Size_type len);
 
 
@@ -43355,7 +43355,7 @@ void initData(Complex_ptr& ptr, Size_type len);
 
 
 void initData(Real_type& d);
-# 153 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp"
+# 153 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp"
 long double calcChecksum(Int_ptr d, Size_type len,
                          Real_type scale_factor);
 
@@ -43369,9 +43369,9 @@ long double calcChecksum(Complex_ptr d, Size_type len,
                          Real_type scale_factor);
 
 }
-# 179 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp"
+# 179 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp"
 DataSpace hostCopyDataSpace(DataSpace dataSpace);
-# 191 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp"
+# 191 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp"
 DataSpace hostAccessibleDataSpace(DataSpace dataSpace);
 
 
@@ -43382,7 +43382,7 @@ inline void allocData(DataSpace dataSpace, T*& ptr_ref, Size_type len, Size_type
 {
   Size_type nbytes = len*sizeof(T);
   T* ptr = static_cast<T*>(detail::allocData(dataSpace, nbytes, align));
-# 212 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp"
+# 212 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp"
   ptr_ref = ptr;
 }
 
@@ -43590,7 +43590,7 @@ inline long double calcChecksum(DataSpace dataSpace, T* ptr, Size_type len, Size
 template < typename RajaPool >
 struct RAJAPoolAllocatorHolder
 {
-# 427 "/scratch2/msc24h6/RAJAPerf/src/common/DataUtils.hpp"
+# 427 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/DataUtils.hpp"
   template < typename T >
   struct Allocator
   {
@@ -43687,9 +43687,9 @@ private:
 };
 
 }
-# 18 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp" 2
-# 1 "/scratch2/msc24h6/RAJAPerf/src/common/RunParams.hpp" 1
-# 13 "/scratch2/msc24h6/RAJAPerf/src/common/RunParams.hpp"
+# 18 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp" 2
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RunParams.hpp" 1
+# 13 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RunParams.hpp"
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/set" 1
 # 59 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/set" 3
 
@@ -47013,7 +47013,7 @@ namespace std
 
 }
 # 65 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/set" 2 3
-# 14 "/scratch2/msc24h6/RAJAPerf/src/common/RunParams.hpp" 2
+# 14 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RunParams.hpp" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/vector" 1
 # 59 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/vector" 3
 
@@ -51116,7 +51116,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 73 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/vector" 2 3
-# 15 "/scratch2/msc24h6/RAJAPerf/src/common/RunParams.hpp" 2
+# 15 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RunParams.hpp" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/array" 1
 # 33 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/array" 3
 # 43 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/array" 3
@@ -51437,11 +51437,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 16 "/scratch2/msc24h6/RAJAPerf/src/common/RunParams.hpp" 2
-# 25 "/scratch2/msc24h6/RAJAPerf/src/common/RunParams.hpp"
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RunParams.hpp" 2
+# 25 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RunParams.hpp"
 namespace rajaperf
 {
-# 35 "/scratch2/msc24h6/RAJAPerf/src/common/RunParams.hpp"
+# 35 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/RunParams.hpp"
 class RunParams {
 
 public:
@@ -51814,9 +51814,9 @@ private:
 
 
 }
-# 19 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp" 2
-# 1 "/scratch2/msc24h6/RAJAPerf/src/common/GPUUtils.hpp" 1
-# 19 "/scratch2/msc24h6/RAJAPerf/src/common/GPUUtils.hpp"
+# 19 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp" 2
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/GPUUtils.hpp" 1
+# 19 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/GPUUtils.hpp"
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/climits" 1
 # 40 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/climits" 3
 
@@ -51854,7 +51854,7 @@ private:
 # 204 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/usr/include/limits.h" 2 3
 # 22 "/scratch2/msc24h6/hero-tools/install/lib/clang/15.0.0/include/limits.h" 2 3
 # 43 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/climits" 2 3
-# 20 "/scratch2/msc24h6/RAJAPerf/src/common/GPUUtils.hpp" 2
+# 20 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/GPUUtils.hpp" 2
 
 namespace rajaperf
 {
@@ -52065,10 +52065,10 @@ using reducer_helpers = camp::list<
 }
 
 }
-# 20 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp" 2
+# 20 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp" 2
 
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp" 1
-# 88 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp" 1
+# 88 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp"
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/chrono" 1
 # 34 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/chrono" 3
 
@@ -53753,11 +53753,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
   }
 # 1317 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/chrono" 3
 }
-# 89 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp" 2
+# 89 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp" 2
 
 namespace RAJA
 {
-# 101 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp"
+# 101 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp"
 class ChronoTimer
 {
 public:
@@ -53794,7 +53794,7 @@ private:
 
 using TimerBase = ChronoTimer;
 }
-# 258 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp"
+# 258 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/include/RAJA/util/Timer.hpp"
 namespace RAJA
 {
 
@@ -53814,10 +53814,10 @@ public:
 };
 
 }
-# 22 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp" 2
-# 35 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 1
-# 14 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
+# 22 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp" 2
+# 35 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 1
+# 14 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstring" 1
 # 40 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstring" 3
 # 71 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstring" 3
@@ -53852,7 +53852,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 123 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstring" 3
 }
 }
-# 15 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
+# 15 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/memory" 1
 # 48 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/memory" 3
 # 67 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/memory" 3
@@ -61002,7 +61002,7 @@ inline pointer_safety
 get_pointer_safety() noexcept { return pointer_safety::relaxed; }
 # 412 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/memory" 3
 }
-# 16 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/mutex" 1
 # 33 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/mutex" 3
 # 43 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/mutex" 3
@@ -61730,12 +61730,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 17 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
+# 17 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
 
 
 
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/event.hpp" 1
-# 17 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/event.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/event.hpp" 1
+# 17 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/event.hpp"
 namespace camp
 {
 namespace resources
@@ -61814,11 +61814,11 @@ namespace resources
   }
 }
 }
-# 21 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp" 1
-# 15 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp"
-# 1 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/platform.hpp" 1
-# 14 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/platform.hpp"
+# 21 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp" 1
+# 15 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp"
+# 1 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/platform.hpp" 1
+# 14 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/platform.hpp"
 namespace camp
 {
 namespace resources
@@ -61844,14 +61844,14 @@ namespace resources
   }
 }
 }
-# 16 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp" 2
+# 16 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp" 2
 
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstdlib" 1
 # 40 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstdlib" 3
-# 18 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp" 2
+# 18 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp" 2
 # 1 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstring" 1
 # 40 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/cstring" 3
-# 19 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp" 2
+# 19 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource/host.hpp" 2
 
 namespace camp
 {
@@ -61929,8 +61929,8 @@ namespace resources
   }
 }
 }
-# 22 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
-# 40 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
+# 22 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp" 2
+# 40 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
 namespace camp
 {
 namespace resources
@@ -61987,7 +61987,7 @@ namespace resources
       Event get_event_erased() { return m_value->get_event_erased(); }
       void wait_for(Event *e) { m_value->wait_for(e); }
       void wait() { m_value->wait(); }
-# 106 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
+# 106 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
       bool operator==(Resource const& r) const
       {
         if(get_platform() == r.get_platform()) {
@@ -61995,7 +61995,7 @@ namespace resources
         }
         return false;
       }
-# 121 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
+# 121 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
       bool operator!=(Resource const& r) const
       {
         return !(*this == r);
@@ -62066,7 +62066,7 @@ namespace resources
     struct resource_from_platform<Platform::host> {
       using type = ::camp::resources::Host;
     };
-# 216 "/scratch2/msc24h6/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
+# 216 "/scratch2/msc24h6/test_raja/RAJAPerf/tpl/RAJA/tpl/camp/include/camp/resource.hpp"
     namespace detail
     {
       template <typename Res>
@@ -62121,7 +62121,9 @@ namespace resources
   }
 }
 }
-# 36 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp" 2
+# 36 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp" 2
+
+
 
 
 
@@ -63322,10 +63324,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 1231 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/bits/stl_multimap.h" 3
 }
 # 63 "/scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot/../include/c++/10.3.0/map" 2 3
-# 41 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp" 2
-# 84 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 43 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp" 2
+# 86 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
 namespace rajaperf {
-# 94 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 96 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
 class KernelBase
 {
 public:
@@ -63365,10 +63367,10 @@ public:
 
   virtual void setSeqTuningDefinitions(VariantID vid)
   { addVariantTuningName(vid, getDefaultTuningName()); }
-# 150 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 152 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
   virtual void setOpenMPTargetTuningDefinitions(VariantID vid)
   { addVariantTuningName(vid, getDefaultTuningName()); }
-# 169 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 171 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
   Index_type getDefaultProblemSize() const { return default_prob_size; }
   Index_type getActualProblemSize() const { return actual_prob_size; }
   Index_type getDefaultReps() const { return default_reps; }
@@ -63453,10 +63455,10 @@ public:
   { return checksum[vid].at(tune_idx); }
 
   void execute(VariantID vid, size_t tune_idx);
-# 284 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 286 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
   void synchronize()
   {
-# 307 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 309 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
   }
 
   Size_type getDataAlignment() const;
@@ -63588,6 +63590,8 @@ public:
 
   void startTimer()
   {
+    std::cout << "Before running kernel" << std::endl;
+    print_riscv_interrupts();
     synchronize();
 
 
@@ -63603,9 +63607,48 @@ public:
 
 
              ; timer.stop(); recordExecTime();
+
+    std::cout << "After running kernel" << std::endl;
+    print_riscv_interrupts();
   }
 
   void resetTimer() { timer.reset(); }
+
+
+  void print_riscv_interrupts()
+  {
+    int fd = open("/proc/interrupts", 00 | 040000);
+    if (fd == -1) {
+        std::cerr << "Failed to open file" << std::endl;
+        return;
+    }
+
+    const size_t buffer_size = 4096;
+    std::vector<char> buffer(buffer_size);
+    ssize_t bytes_read;
+    int line_num = 0;
+    std::string line;
+
+    while ((bytes_read = read(fd, buffer.data(), buffer_size)) > 0) {
+        for (ssize_t i = 0; i < bytes_read; ++i) {
+            if (buffer[i] == '\n') {
+                if (line_num == 0 || line_num == 3) {
+                    std::cout << line << std::endl;
+                }
+                line.clear();
+                line_num++;
+            } else {
+                line += buffer[i];
+            }
+        }
+    }
+
+    if (bytes_read == -1) {
+        std::cerr << "Failed to read file" << std::endl;
+    }
+
+    close(fd);
+  }
 
 
 
@@ -63621,9 +63664,9 @@ public:
   virtual void tearDown(VariantID vid, size_t tune_idx) = 0;
 
   virtual void runSeqVariant(VariantID vid, size_t tune_idx) = 0;
-# 485 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 528 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
   virtual void runOpenMPTargetVariant(VariantID vid, size_t tune_idx) = 0;
-# 538 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 581 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
 protected:
   const RunParams& run_params;
 
@@ -63673,12 +63716,12 @@ private:
   std::vector<int> num_exec[NumVariants];
 
   RAJA::Timer timer;
-# 610 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 653 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
   std::vector<RAJA::Timer::ElapsedType> min_time[NumVariants];
   std::vector<RAJA::Timer::ElapsedType> max_time[NumVariants];
   std::vector<RAJA::Timer::ElapsedType> tot_time[NumVariants];
 };
-# 623 "/scratch2/msc24h6/RAJAPerf/src/common/KernelBase.hpp"
+# 667 "/scratch2/msc24h6/test_raja/RAJAPerf/src/common/KernelBase.hpp"
 }
 # 3 "./include/DAXPY_OMP.hpp" 2
 

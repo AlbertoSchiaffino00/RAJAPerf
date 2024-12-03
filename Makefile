@@ -2,10 +2,11 @@
 # Licensed under the Apache License, Version 2.0, see LICENSE for details.
 # SPDX-License-Identifier: Apache-2.0
 #
-# Cyril Koenig <cykoenig@iis.ee.ethz.ch>
+# Alberto Schiaffino
+# Used to disassemble the binary
 
 # Buildroot contains the GCC toolchain
-BR_OUTPUT_DIR ?= ./../hero-tools/cva6-sdk/buildroot/output
+BR_OUTPUT_DIR ?= ./../../hero-tools/cva6-sdk/buildroot/output
 RISCV          = $(BR_OUTPUT_DIR)/host
 RV64_SYSROOT   = $(RISCV)/riscv64-buildroot-linux-gnu/sysroot
 

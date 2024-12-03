@@ -21,6 +21,39 @@ Specifically, it is used to assess and monitor runtime performance of kernels
 implemented using [RAJA] compare those to variants implemented using common 
 parallel programming models, such as OpenMP and CUDA, directly.
 
+Build for Cheshire
+-------------------
+#### 1) Clone and checkout to riscv
+```bash
+git clone https://github.com/AlbertoSchiaffino00/RAJAPerf.git
+git checkout riscv
+git submodule update --init --recursive 
+```
+
+#### 2) Setup env
+Open setenv.sh and set the correct path to HERO_ROOT
+
+#### 3) Create and setup the build.
+The creation has been tested with cmake-3.25.3
+ ```bash
+mkdir build
+cd build
+cmake .. 
+```
+
+#### 4) Create the OMPTarget_offloads library
+ ```bash
+cd src/OMPTarget_offloads
+make clean all
+```
+The library will be called OMPTarget_offloads.a and saved in the same folder.
+
+#### 5) Build RAJAPerf-omptarget file. It will be available in build/bin folder
+ ```bash
+cd build
+make -j 24 raja-perf-omptarget.exe 
+```
+
 User Documentation
 -------------------
 

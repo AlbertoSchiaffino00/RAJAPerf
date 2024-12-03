@@ -12,7 +12,7 @@
 #export CC=/usr/pack/gcc-9.2.0-af/linux-x64/bin/gcc
 #export CXX=/usr/pack/gcc-9.2.0-af/linux-x64/bin/g++
 
-export HERO_ROOT=$(pwd)/../hero-tools
+export HERO_ROOT=$(pwd)/../../hero-tools
 export CVA6_SDK=$HERO_ROOT/cva6-sdk
 export HERO_INSTALL=$HERO_ROOT/install
 export RISCV=$CVA6_SDK/buildroot/output/host/
@@ -20,7 +20,7 @@ export RV64_SYSROOT=$RISCV/riscv64-buildroot-linux-gnu/sysroot
 export CROSS_COMPILE=$RISCV/bin/riscv64-buildroot-linux-gnu-
 # Parse the device Linux path from buildroot
 if [ -f $CVA6_SDK/buildroot/Makefile ]; then
-export BR_LINUX_DIR=$CVA6_SDK/buildroot/output/$(make -C ../hero-tools/cva6-sdk/buildroot linux-show-info \
+export BR_LINUX_DIR=$CVA6_SDK/buildroot/output/$(make -C $HERO_ROOT/cva6-sdk/buildroot linux-show-info \
                     | python3 -c "import sys, json; print(json.loads(sys.stdin.readlines()[0])['linux']['build_dir'])")
 fi
 # For Occamy bootrom

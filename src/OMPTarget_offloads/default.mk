@@ -24,6 +24,7 @@ HOP  := $(HERO_INSTALL)/bin/hc-omp-pass
 GCC  := $(HERO_INSTALL)/bin/$(TARGET_HOST)-gcc
 HOST_OBJDUMP := $(RISCV)/bin/riscv64-buildroot-linux-gnu-objdump
 DEV_OBJDUMP  := $(HERO_INSTALL)/bin/llvm-objdump
+AR   := $(HERO_INSTALL)/bin/llvm-ar
 
 # Flags
 COB_TARGETS = $(subst $(space),$(comma),host-$(TARGET_HOST) $(foreach target,$(TARGET_DEVS),openmp-$(target)))
@@ -65,7 +66,7 @@ COBJS_UNBUNDLED = $(foreach dev,host $(DEVS),$(patsubst %.cpp, %-$(dev).ll, $(CS
 COBJS_BUNDLED = $(patsubst %.cpp, %-out.ll, $(CSRCS))
 
 # Targets
-all: $(DEPS) $(EXE)
+all: $(DEPS) $(EXE) OMPTarget_offloads.a
 
 # Compile heterogeneous C source and get a bundled .ll
 %.ll: %.cpp $(DEPDIR)/%.d | $(DEPDIR)
@@ -113,6 +114,11 @@ $(foreach host-obj, $(patsubst %.cpp, %-host.ll, $(CSRCS)), $(eval $(call add_ho
 
 # Link the final application
 $(EXE): $(COBJS_BUNDLED)
+
+# Create the final library
+OMPTarget_offloads.a: $(COBJS_BUNDLED)
+	@echo "AR     <= $@"
+	$(AR) rcs $@ $^
 
 # Dep
 $(DEPDIR):
