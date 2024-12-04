@@ -24,7 +24,7 @@ HOP  := $(HERO_INSTALL)/bin/hc-omp-pass
 GCC  := $(HERO_INSTALL)/bin/$(TARGET_HOST)-gcc
 HOST_OBJDUMP := $(RISCV)/bin/riscv64-buildroot-linux-gnu-objdump
 DEV_OBJDUMP  := $(HERO_INSTALL)/bin/llvm-objdump
-AR   := $(HERO_INSTALL)/bin/llvm-ar
+AR   := /scratch2/msc24h6/hero-tools/install/bin/llvm-ar 
 
 # Flags
 COB_TARGETS = $(subst $(space),$(comma),host-$(TARGET_HOST) $(foreach target,$(TARGET_DEVS),openmp-$(target)))
@@ -66,7 +66,7 @@ COBJS_UNBUNDLED = $(foreach dev,host $(DEVS),$(patsubst %.cpp, %-$(dev).ll, $(CS
 COBJS_BUNDLED = $(patsubst %.cpp, %-out.ll, $(CSRCS))
 
 # Targets
-all: $(DEPS) $(EXE) OMPTarget_offloads.a
+all: $(DEPS) $(EXE) libOMPTarget_offloads.ll
 
 # Compile heterogeneous C source and get a bundled .ll
 %.ll: %.cpp $(DEPDIR)/%.d | $(DEPDIR)
@@ -115,10 +115,12 @@ $(foreach host-obj, $(patsubst %.cpp, %-host.ll, $(CSRCS)), $(eval $(call add_ho
 # Link the final application
 $(EXE): $(COBJS_BUNDLED)
 
+
 # Create the final library
-OMPTarget_offloads.a: $(COBJS_BUNDLED)
+libOMPTarget_offloads.ll: $(COBJS_BUNDLED)
 	@echo "AR     <= $@"
-	$(AR) rcs $@ $^
+	$(AR) qc $@ $^
+	/scratch2/msc24h6/hero-tools/install/bin/llvm-ranlib $@
 
 # Dep
 $(DEPDIR):
@@ -131,7 +133,7 @@ include $(wildcard $(DEPFILES))
 
 # Phony
 clean:
-	-rm -vf __hmpp* $(EXE) *~ *.bc *.dis *.elf *.i *.lh *.lk *.ll *.o *.s *.slm a.out* *.dump
+	-rm -vf __hmpp* $(EXE) *~ *.bc *.dis *.elf *.i *.lh *.lk *.ll *.o *.s *.slm a.out* *.dump *.a
 	-rm -rvf $(DEPDIR)
 	-rm -vf *-host-llvm *-host-gnu
 

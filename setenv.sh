@@ -11,7 +11,7 @@
 
 #export CC=/usr/pack/gcc-9.2.0-af/linux-x64/bin/gcc
 #export CXX=/usr/pack/gcc-9.2.0-af/linux-x64/bin/g++
-
+export RAJA_PERF_ROOT=$(pwd)
 export HERO_ROOT=$(pwd)/../../hero-tools
 export CVA6_SDK=$HERO_ROOT/cva6-sdk
 export HERO_INSTALL=$HERO_ROOT/install

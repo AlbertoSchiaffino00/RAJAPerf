@@ -31,7 +31,10 @@ git submodule update --init --recursive
 ```
 
 #### 2) Setup env
-Open setenv.sh and set the correct path to HERO_ROOT
+Open setenv.sh and set the correct path to hero-tools in HERO_ROOT.
+ ```bash
+source setenv.sh
+```
 
 #### 3) Create and setup the build.
 The creation has been tested with cmake-3.25.3
@@ -39,14 +42,15 @@ The creation has been tested with cmake-3.25.3
 mkdir build
 cd build
 cmake .. 
+cd .. 
 ```
 
-#### 4) Create the OMPTarget_offloads library
+#### 4) Create the OMPTarget_offloads IR files
  ```bash
 cd src/OMPTarget_offloads
 make clean all
+cd ../..
 ```
-The library will be called OMPTarget_offloads.a and saved in the same folder.
 
 #### 5) Build RAJAPerf-omptarget file. It will be available in build/bin folder
  ```bash

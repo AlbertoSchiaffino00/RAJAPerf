@@ -1,12 +1,12 @@
 set(CMAKE_SYSTEM_NAME Linux)
 
 # set var for the project
-set(HERO_INSTALL_PATH /scratch2/msc24h6/hero-tools/install)
-set(RISCV /scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host)
-set(RV64_SYSROOT  /scratch2/msc24h6/hero-tools/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot)
-set(HERO_ROOT /scratch2/msc24h6/hero-tools)
-set(CARFIELD_ROOT  /scratch2/msc24h6/hero-tools/platforms/carfield)
-set(RAJAPERF /scratch2/msc24h6/RAJAPerf)
+set(HERO_ROOT  $ENV{HERO_ROOT})
+set(HERO_INSTALL_PATH ${HERO_ROOT}/install)
+set(RISCV ${HERO_ROOT}/cva6-sdk/buildroot/output/host)
+set(RV64_SYSROOT  ${HERO_ROOT}/cva6-sdk/buildroot/output/host/riscv64-buildroot-linux-gnu/sysroot)
+set(CARFIELD_ROOT  ${HERO_ROOT}/platforms/carfield)
+set(RAJAPERF $ENV{RAJA_PERF_ROOT})
 
 set(CMAKE_FIND_ROOT_PATH  ${RV64_SYSROOT} CACHE PATH "" FORCE)
 set(CMAKE_SYSROOT  ${RV64_SYSROOT} CACHE PATH "" FORCE)
@@ -21,7 +21,7 @@ include_directories(${HERO_ROOT}/sw/libhero/include ${HERO_ROOT}/apps/carfield/o
 include_directories(${RV64_SYSROOT}/../include/c++/10.3.0/riscv64-buildroot-linux-gnu)
 include_directories(${RV64_SYSROOT}/../include/c++/10.3.0)
 include_directories(${RV64_SYSROOT}/usr/include)
-include_directories(/scratch2/msc24h6/RAJAPerf/src/OMPTarget_offloads/include)
+include_directories(${RAJAPERF}/src/OMPTarget_offloads/include)
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY BOTH )
 set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE BOTH )

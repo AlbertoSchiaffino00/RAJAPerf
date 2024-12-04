@@ -6,7 +6,7 @@
 # Used to disassemble the binary
 
 # Buildroot contains the GCC toolchain
-BR_OUTPUT_DIR ?= ./../../hero-tools/cva6-sdk/buildroot/output
+BR_OUTPUT_DIR ?= $(HERO_ROOT)/cva6-sdk/buildroot/output
 RISCV          = $(BR_OUTPUT_DIR)/host
 RV64_SYSROOT   = $(RISCV)/riscv64-buildroot-linux-gnu/sysroot
 
